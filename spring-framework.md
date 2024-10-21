@@ -576,11 +576,18 @@ TDD Benefits:
 Spring provides a comprehensive testing support for unit testing, integration testing, and end-to-end testing. Spring
 Testing Framework provides the following features:
 
+Spring Boot provides the following annotations for testing:
+
 1. **@SpringBootTest**: Annotation to test Spring Boot applications.
-    - Loads the Spring ApplicationContext
-    - Support for Spring dependency injection
-    - You can access data from Spring `application.properties`
+   - Loads the Spring ApplicationContext
+   - Support for Spring dependency injection
+   - You can access data from Spring `application.properties`
 2. **@WebMvcTest**: Annotation to test Spring MVC controllers.
 3. **@DataJpaTest**: Annotation to test JPA repositories.
 4. **@MockBean**: Annotation to mock a bean in a Spring application context.
 5. **@AutoConfigureMockMvc**: Annotation to auto-configure the MockMvc instance.
+6. **@TestPropertySource**: Annotation to specify the properties file for testing.
+7. **@TestConfiguration**: Annotation to define a configuration class for testing.
+
+**_ReflectionTestUtils_**: Spring provides a utility class `ReflectionTestUtils` to set the value of private fields in a
+class using reflection.
